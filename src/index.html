@@ -1,0 +1,40 @@
+<!--
+  This HTML template is structured using Gulp's @@include directive to
+  modularize the code. Each @@include statement inserts the content
+  from the specified partial HTML file into this main template, making
+  the code more maintainable and reusable.
+-->
+
+<!-- Includes the doctype declaration and opening <html> tag. -->
+@@include("partials/doctype.html")
+
+<head>
+  <!-- Includes meta tags and other <head> elements. The title of the page is dynamically set to "Dashboard". -->
+  @@include("partials/head-meta.html", {"title": "Dashboard"})
+
+  <!-- Includes links to CSS stylesheets and other <head> styles. -->
+  @@include("partials/head-styles.html")
+</head>
+
+<body>
+<div id="main-wrapper">
+  <!-- Includes the header section, typically containing the site logo, title, and top navigation. -->
+  @@include("partials/header.html")
+
+  <!-- Includes the navbar, which provides site-wide navigation links. -->
+  @@include("partials/navbar.html")
+
+  <main class="main-container">
+    main
+  </main>
+
+  <!-- Includes the footer section, containing copyright information, links, and other footer elements. -->
+  @@include("partials/footer.html")
+</div>
+
+<!-- Includes JavaScript files and inline scripts, typically placed just before the closing </body> tag
+for better page load performance. -->
+@@include("partials/js-scripts.html")
+</body>
+
+</html>

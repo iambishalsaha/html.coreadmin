@@ -1,0 +1,16 @@
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  inset-inline-start: 0;
+  height: $footer-height;
+  padding: 20px calc(#{$grid-gutter-width} * 0.5);
+  background-color: var(--footer-bg-color);
+  color: var(--footer-text-color);
+  border-top: 1px solid $border-color;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    margin-left: $vertical-navbar-width;
+  }
+}

@@ -1,0 +1,13 @@
+.app-navbar {
+  background: var(--navbar-bg-color);
+  width: $vertical-navbar-width;
+  height: 100%;
+  //border-inline-end: 1px solid $navbar-border-color;
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  z-index: $zindex-navbar;
+  transition: all .1s ease-out;
+  box-shadow: $vertical-navbar-box-shadow;
+  color: var(--navbar-text-color);
+}

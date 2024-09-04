@@ -1,0 +1,18 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "variables/bootstrap-variables";
+@import "variables/bootstrap-variables-dark";
+@import "variables/custom-variables";
+@import "variables/custom-variables-dark";
+@import "node_modules/bootstrap/scss/mixins";
+@import "root";
+
+/** Plugins */
+@import "plugins/simplebar";
+
+/** Layout */
+@import "layouts/navbar";
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/main";
+

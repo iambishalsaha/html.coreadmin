@@ -1,0 +1,15 @@
+.header {
+  inset-block-start: 0;
+  inset-inline: 0;
+  position: fixed;
+  z-index: $zindex-header;
+  background: var(--header-bg-color);
+  border-block-end: 1px solid $header-border-color;
+  transition: all 0.1s ease;
+  height: $header-height;
+  color: var(--header-text-color);
+
+  @media (min-width: 768px) {
+    margin-left: $vertical-navbar-width;
+  }
+}

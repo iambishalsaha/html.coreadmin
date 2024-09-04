@@ -1,0 +1,16 @@
+:root {
+  /* Header */
+  --header-bg-color:                                #{$header-bg-color};
+  --header-text-color:                                #{$header-text-color};
+  --header-component-bg-color:                                #{$header-item-bg-color};
+  --header-item-sub-text-color: #{$header-item-sub-text-color};
+
+  /* Navbar */
+  --navbar-bg-color:                                   #{$navbar-bg-color};
+  --navbar-border-color:                               #{$navbar-border-color};
+  --navbar-text-color:                               #{$navbar-text-color};
+
+  /** Footer */
+  --footer-bg-color:                                          #{$footer-bg-color};
+  --footer-text-color:                                       #{$footer-text-color};
+}
