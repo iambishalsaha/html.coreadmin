@@ -1,0 +1,47 @@
+{
+  "private": true,
+  "name": "coreadmin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "browserslist": [
+    "last 2 version",
+    "> 2%"
+  ],
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Bishal Saha",
+  "license": "ISC",
+  "resolutions": {
+    "autoprefixer": "10.4.5"
+  },
+  "type": "module",
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "del": "^7.1.0",
+    "gulp": "^5.0.0",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-cached": "^1.1.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-if": "^3.0.0",
+    "gulp-npm-dist": "^1.0.4",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.1.4",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-useref-plus": "^0.0.8",
+    "sass": "1.77.6"
+  },
+  "dependencies": {
+    "@simonwep/pickr": "^1.9.1",
+    "apexcharts": "^3.52.0",
+    "bootstrap": "^5.3.3",
+    "simplebar": "^6.2.7"
+  }
+}
