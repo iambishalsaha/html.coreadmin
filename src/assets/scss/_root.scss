@@ -1,16 +1,18 @@
 :root {
   /* Header */
-  --header-bg-color:                                #{$header-bg-color};
-  --header-text-color:                                #{$header-text-color};
-  --header-component-bg-color:                                #{$header-item-bg-color};
-  --header-item-sub-text-color: #{$header-item-sub-text-color};
+  --#{$prefix}header-bg-color:                                #{$header-bg-color};
+  --#{$prefix}header-text-color:                                #{$header-text-color};
+  --#{$prefix}header-component-bg-color:                                #{$header-item-bg-color};
+  --#{$prefix}header-item-bg-color: #{$header-item-bg-color};
+  --#{$prefix}header-item-sub-text-color: #{$header-item-sub-text-color};
+  --#{$prefix}header-border-color: #{$header-border-color};
 
   /* Navbar */
-  --navbar-bg-color:                                   #{$navbar-bg-color};
-  --navbar-border-color:                               #{$navbar-border-color};
-  --navbar-text-color:                               #{$navbar-text-color};
+  --#{$prefix}navbar-bg-color:                                   #{$navbar-bg-color};
+  --#{$prefix}navbar-border-color:                               #{$navbar-border-color};
+  --#{$prefix}navbar-text-color:                               #{$navbar-text-color};
 
   /** Footer */
-  --footer-bg-color:                                          #{$footer-bg-color};
-  --footer-text-color:                                       #{$footer-text-color};
+  --#{$prefix}footer-bg-color:                                          #{$footer-bg-color};
+  --#{$prefix}footer-text-color:                                       #{$footer-text-color};
 }

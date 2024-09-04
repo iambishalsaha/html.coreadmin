@@ -1,0 +1,32 @@
+button,
+a {
+  outline: none !important;
+}
+
+:is(.btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active) {
+  border-color: transparent;
+}
+
+.btn-icon {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(#{$btn-padding-y * 2} + #{$btn-line-height}em + #{$border-width * 2});
+  width: calc(#{$btn-padding-y * 2} + #{$btn-line-height}em + #{$border-width * 2});
+  padding: 0;
+
+  :is(i, svg, img) {
+    vertical-align: middle;
+  }
+
+  &.btn-sm {
+    height: calc(#{$btn-padding-y-sm * 2} + #{$btn-line-height}em + #{$border-width * 2});
+    width: calc(#{$btn-padding-y-sm * 2} + #{$btn-line-height}em + #{$border-width * 2});
+  }
+
+  &.btn-lg {
+    height: calc(#{$btn-padding-y-lg * 2} + #{$btn-line-height}em + #{$border-width * 2});
+    width: calc(#{$btn-padding-y-lg * 2} + #{$btn-line-height}em + #{$border-width * 2});
+  }
+}

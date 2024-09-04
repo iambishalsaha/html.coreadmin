@@ -1,5 +1,5 @@
 .app-navbar {
-  background: var(--navbar-bg-color);
+  background: var(--#{$prefix}navbar-bg-color);
   width: $vertical-navbar-width;
   height: 100%;
   //border-inline-end: 1px solid $navbar-border-color;
@@ -9,5 +9,5 @@
   z-index: $zindex-navbar;
   transition: all .1s ease-out;
   box-shadow: $vertical-navbar-box-shadow;
-  color: var(--navbar-text-color);
+  color: var(--#{$prefix}navbar-text-color);
 }

@@ -5,9 +5,9 @@
   inset-inline-start: 0;
   height: $footer-height;
   padding: 20px calc(#{$grid-gutter-width} * 0.5);
-  background-color: var(--footer-bg-color);
-  color: var(--footer-text-color);
-  border-top: 1px solid $border-color;
+  background-color: var(--#{$prefix}footer-bg-color);
+  color: var(--#{$prefix}footer-text-color);
+  border-top: 1px solid var(--#{$prefix}border-color);
   justify-content: center;
 
   @media (min-width: 768px) {
