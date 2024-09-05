@@ -11,10 +11,11 @@
 @import "plugins/simplebar";
 
 /** Layout */
-@import "layouts/navbar/vertical-navbar";
+@import "layouts/customizer";
 @import "layouts/footer";
 @import "layouts/header";
 @import "layouts/main";
+@import "layouts/navbar/vertical-navbar";
 
 /** Buttons */
 @import "components/avatar";

@@ -5,12 +5,13 @@
   bottom: 0;
   position: fixed;
   z-index: $zindex-navbar;
-  box-shadow: $vertical-navbar-box-shadow;
-  color: var(--#{$prefix}navbar-text-color);
+  box-shadow: var(--#{$prefix}vertical-navbar-box-shadow);
+  border-right: 1px solid var(--#{$prefix}vertical-navbar-border-color);
+  padding: 0 0 calc(#{$footer-height} + 32px) 0;
   transition: all .1s ease-out;
 
   .navbar-header {
-    padding: 0 1.3rem;
+    padding: 0 1.2rem;
     text-align: center;
     transition: all .1s ease-out;
 
@@ -26,20 +27,19 @@
       padding: $vertical-navbar-menu-padding-y $vertical-navbar-menu-padding-x;
       font-size: $navbar-menu-font-size;
       font-family: $navbar-menu-font-family;
-      color: var(--navbar-text-color);
-      filter: brightness(70%);
+      color: var(--#{$prefix}navbar-text-color);
 
       &.active {
-        filter: hue-rotate(90deg) brightness(100%);
+        color: $white;
       }
       &:hover {
-        filter: hue-rotate(90deg) brightness(100%);
+        color: $white;
       }
 
       i {
         display: inline-block;
         min-width: $navbar-menu-icon-width;
-        font-size: 18px;
+        font-size: 1.25rem;
         line-height: inherit;
       }
       svg {

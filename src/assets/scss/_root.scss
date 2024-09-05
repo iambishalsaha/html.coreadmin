@@ -7,12 +7,34 @@
   --#{$prefix}header-item-sub-text-color: #{$header-item-sub-text-color};
   --#{$prefix}header-border-color: #{$header-border-color};
 
-  /* Navbar */
-  --#{$prefix}navbar-bg-color:                                   #{$navbar-bg-color};
-  --#{$prefix}navbar-border-color:                               #{$navbar-border-color};
-  --#{$prefix}navbar-text-color:                               #{$navbar-text-color};
-
   /** Footer */
   --#{$prefix}footer-bg-color:                                          #{$footer-bg-color};
   --#{$prefix}footer-text-color:                                       #{$footer-text-color};
+
+  /* Navbar */
+  --#{$prefix}vertical-navbar-box-shadow:                                   #{$vertical-navbar-box-shadow};
+  --#{$prefix}vertical-navbar-border-color:                                   #{$vertical-navbar-border-color};
+
+  --#{$prefix}navbar-bg-color:                                   #{$navbar-bg-color};
+  --#{$prefix}navbar-text-color:                               #{$navbar-text-color};
+
+  &[data-navbar-color-mode="dark"] {
+    --#{$prefix}navbar-bg-color:                                   #{$dark-navbar-bg-color};
+    --#{$prefix}vertical-navbar-border-color:                                   #{$dark-vertical-navbar-border-color};
+    --#{$prefix}navbar-text-color:                               #{$dark-navbar-text-color};
+  }
+}
+
+@if $enable-dark-mode {
+  @include color-mode(dark, true) {
+    --#{$prefix}navbar-bg-color: #{$navbar-bg-color-dark};
+    --#{$prefix}vertical-navbar-border-color:                                   #{$vertical-navbar-border-color};
+    --#{$prefix}navbar-text-color:                               #{$navbar-text-color-dark};
+
+    &[data-navbar-color-mode="dark"] {
+      --#{$prefix}navbar-bg-color:                                   #{$dark-navbar-bg-color-dark};
+      --#{$prefix}vertical-navbar-border-color:                                   #{$dark-vertical-navbar-border-color-dark};
+      --#{$prefix}navbar-text-color:                               #{$dark-navbar-text-color-dark};
+    }
+  }
 }

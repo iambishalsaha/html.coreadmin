@@ -416,7 +416,7 @@ $color-mode-type: data; // `data` or `media-query`
 // Prefix for :root CSS variables
 
 $variable-prefix:             cap-; // Deprecated in v5.2.0 for the shorter `$prefix`
-$prefix:                      $variable-prefix !default;
+$prefix:                      $variable-prefix;
 
 // Gradient
 //

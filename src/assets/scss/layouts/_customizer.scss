@@ -1,0 +1,33 @@
+.customizer {
+  .offcanvas {
+    z-index: $zindex-customizer;
+  }
+
+  .offcanvas-body {
+    padding: 0 0 4.5rem 0;
+    background: var(--#{$prefix}body-bg);
+  }
+
+  .nav-link {
+    border-radius: 0;
+    color: $gray-600;
+    font-weight: 600;
+    &.active {
+      color: var(--#{$prefix}primary);
+      background-color: rgb($primary, 0.2);
+      border-color: transparent;
+    }
+    &:hover {
+      border-color: transparent;
+    }
+  }
+
+  .customizer-heading {
+    padding: 0 $grid-gutter-width;
+    margin-top: calc(#{$grid-gutter-width} * 0.5);
+  }
+  .customizer-options {
+    padding: calc(#{$grid-gutter-width} * 0.5) $grid-gutter-width;
+    background: var(--#{$prefix}secondary-bg);
+  }
+}

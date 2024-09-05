@@ -1,0 +1,90 @@
+<div
+    class="offcanvas offcanvas-end customizer"
+    tabindex="-1" id="customizer-offcanvas"
+    aria-labelledby="customizer-offcanvas-label">
+  <div class="offcanvas-header border-bottom">
+    <h5 class="offcanvas-title">Customizer</h5>
+    <button
+        type="button"
+        class="btn-close ms-auto"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+    ></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="h-100" data-simplebar>
+      <nav class="">
+        <div class="nav nav-tabs nav-justified" role="tablist">
+          <button type="button" class="nav-link active" id="customize-theme-style-tab" role="tab" data-bs-toggle="tab"
+                  data-bs-target="#customize-theme-style" aria-controls="customize-theme-style" aria-selected="true">
+            Theme Styles
+          </button>
+          <button type="button" class="nav-link" role="tab" id="customize-theme-color-tab" data-bs-toggle="tab"
+                  data-bs-target="#customize-theme-color" aria-controls="customize-theme-color" aria-selected="false">
+            Theme Colors
+          </button>
+        </div>
+      </nav>
+      <div class="tab-content">
+        <div class="tab-pane fade show active border-0" id="customize-theme-style"
+             aria-labelledby="customize-theme-style-tab" tabindex="0">
+          <div>
+            <div class="customizer-heading">
+              <h6>Theme Color Mode:</h6>
+            </div>
+            <div class="customizer-options">
+              <div class="row">
+                <div class="col-4">
+                  <div class="form-check">
+                    <label class="form-check-label" for="customizer-color-mode-light">Light</label>
+                    <input type="radio" name="color-mode" id="customizer-color-mode-light" class="form-check-input">
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="form-check">
+                    <label class="form-check-label" for="customizer-color-mode-dark">Dark</label>
+                    <input type="radio" name="color-mode" id="customizer-color-mode-dark" class="form-check-input">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade show border-0" id="customize-theme-color" aria-labelledby="customize-theme-color-tab"
+             tabindex="1">
+          <div>
+            <div class="customizer-heading">
+              <h6>Navbar Color:</h6>
+            </div>
+            <div class="customizer-options">
+              <div class="row">
+                <div class="col-4">
+                  <div class="form-check">
+                    <label class="form-check-label" for="customizer-navbar-color-mode-light">Light</label>
+                    <input type="radio" name="navbar-color-mode" id="customizer-navbar-color-mode-light" class="form-check-input">
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="form-check">
+                    <label class="form-check-label" for="customizer-navbar-color-mode-dark">Dark</label>
+                    <input type="radio" name="navbar-color-mode" id="customizer-navbar-color-mode-dark" class="form-check-input">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="offcanvas-footer border-top p-3 text-center">
+    <div class="row">
+      <div class="col-6">
+        <button type="button" class="btn btn-light w-100" id="reset-layout-settings">Reset</button>
+      </div>
+      <div class="col-6">
+        <button type="button" class="btn btn-primary text-white w-100">Save All</button>
+      </div>
+    </div>
+  </div>
+</div>

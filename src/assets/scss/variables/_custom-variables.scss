@@ -3,6 +3,7 @@ Layout
 *****************************************************************************************************/
 $zindex-header: $zindex-fixed + 1;
 $zindex-navbar: $zindex-fixed + 2;
+$zindex-customizer: $zindex-fixed + 3;
 $layout-bg-color: #f1f4f7;
 
 /****************************************************************************************************
@@ -20,16 +21,24 @@ Navbar
 *****************************************************************************************************/
 $vertical-navbar-width: 270px;
 $vertical-navbar-box-shadow:                        0 2px 5px rgba(21, 34, 68, 0.10);
-$vertical-navbar-menu-padding-x:                    1.5rem;
-$vertical-navbar-menu-padding-y:                    0.625rem;
-$navbar-bg-color: #006bb2;
-$navbar-border-color:                            $border-color;
-$navbar-text-color:                            $white;
-$navbar-menu-font-size:                    0.925rem;
-$navbar-sub-menu-font-size:                0.8125rem;
+$vertical-navbar-menu-padding-x:                    1.2rem;
+$vertical-navbar-menu-padding-y:                    0.6rem;
+$vertical-navbar-border-color:                      $white;
+
+$navbar-text-color:                            darken($gray-600, 10%);
+$navbar-menu-font-size:                    0.938rem;
+$navbar-sub-menu-font-size:                0.875rem;
 $navbar-menu-font-family:                  $font-family-secondary;
 $navbar-sub-menu-font-family:              $font-family-primary;
-$navbar-menu-icon-width:                   1.75rem;
+$navbar-menu-icon-width:                   2rem;
+
+// light
+$navbar-bg-color: $white;
+
+// Dark
+$dark-vertical-navbar-border-color:                      #006bb2;
+$dark-navbar-bg-color: #006bb2;
+$dark-navbar-text-color: #bcc9d5;
 
 /****************************************************************************************************
 Footer
