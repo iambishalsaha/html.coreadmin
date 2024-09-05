@@ -1,3 +1,48 @@
 <nav class="app-navbar navbar-menu" id="navbar">
-  navbar
+  <div class="navbar-header">
+    <a href="index.html" class="logo logo-light">
+      <img src="assets/images/logo/logo-lg-light.png" alt="logo" class="logo logo-lg">
+      <img src="assets/images/logo/logo-sm-light.png" alt="logo" class="logo logo-sm">
+    </a>
+    <a href="index.html" class="logo logo-dark">
+      <img src="assets/images/logo/logo-lg-dark.png" alt="logo" class="logo logo-lg">
+      <img src="assets/images/logo/logo-sm-dark.png" alt="logo" class="logo logo-sm">
+    </a>
+    <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-icon-hover" id="vertical-hover">
+      <i class="ri-record-circle-line"></i>
+    </button>
+  </div>
+  <div id="navbar-scroller">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="menu-category"><span data-key="t-menu">Menu</span></li>
+        <li class="nav-item">
+          <a class="nav-link menu-link" href="#">
+            <i class="mdi mdi-speedometer"></i> <span>Dashboards</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menu-link" href="#navLinkLevel1" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="navLinkLevel1">
+            <i class="mdi mdi-nature-people"></i> <span>Level 1</span>
+          </a>
+          <div class="collapse menu-dropdown" id="navLinkLevel1">
+            <ul class="nav nav-sm flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="#navLinkLevel2" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="navLinkLevel1">
+                  Level 2
+                </a>
+                <div class="collapse menu-dropdown" id="navLinkLevel2">
+                  <ul class="nav nav-sm flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Level 2</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>

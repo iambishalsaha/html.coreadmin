@@ -11,9 +11,9 @@
 @import "plugins/simplebar";
 
 /** Layout */
-@import "layouts/navbar";
-@import "layouts/header";
+@import "layouts/navbar/vertical-navbar";
 @import "layouts/footer";
+@import "layouts/header";
 @import "layouts/main";
 
 /** Buttons */

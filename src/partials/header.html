@@ -52,7 +52,7 @@
       </div>
       <div class="ms-1 d-none d-sm-flex header-item">
         <button type="button" class="btn btn-icon btn-header rounded-circle " id="header-fullscreen-btn">
-          <i class="bx bx-expand fs-22" id="header-fullscreen-icon"></i>
+          <i class="bx bx-fullscreen fs-22" id="header-fullscreen-icon"></i>
         </button>
       </div>
       <div class="ms-1 d-none d-sm-flex">
@@ -69,15 +69,20 @@
         </div>
       </div>
       <div class="ms-1 header-item dropdown header-dropdown">
-        <button type="button" class="btn btn-icon btn-header rounded-circle" data-bs-toggle="dropdown" data-bs-auto-close="outside"
-                aria-haspopup="true" aria-expanded="false">
-          <i class="bx bx-bell fs-22"></i>
-          <span class="position-absolute fs-10 translate-middle badge rounded-pill bg-secondary header-badge">
-              3<span class="visually-hidden">unread messages</span>
+        <button
+            type="button"
+            id="header-notifications-dropdown"
+            class="btn btn-icon btn-header rounded-circle"
+            data-bs-toggle="dropdown"
+            data-bs-auto-close="outside"
+            aria-haspopup="true"
+            aria-expanded="false">
+          <i class="mdi mdi-bell-outline fs-22"></i>
+          <span class="position-absolute fs-10 translate-middle badge rounded-pill bg-danger header-badge">
+              3<span class="visually-hidden"> unread messages</span>
             </span>
         </button>
-        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
-             aria-labelledby="header-notifications-dropdown">
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="header-notifications-dropdown">
           <div class="dropdown-head bg-secondary rounded-top">
             <div class="p-3">
               <div class="d-flex align-items-center justify-content-between">
@@ -86,55 +91,40 @@
               </div>
             </div>
           </div>
-          <div data-simplebar style="max-height: 300px;" class="pe-2">
+          <div data-simplebar style="max-height: 360px;" class="pe-2">
             <div class="text-reset notification-item d-block dropdown-item position-relative">
               <div class="d-flex">
                 <div class="avatar-xs me-3 flex-shrink-0">
-                  <span class="avatar-title bg-info-subtle text-info rounded-circle fs-16">
+                  <span class="avatar-title bg-danger-subtle text-danger rounded-circle fs-16">
                     <i class="bx bx-badge-check"></i>
                   </span>
                 </div>
                 <div class="flex-grow-1">
                   <a href="#" class="stretched-link">
-                    <h6 class="mt-0 mb-2 lh-base">Your <b>Elite</b> author Graphic
-                      Optimization <span class="text-secondary">reward</span> is
-                      ready!
+                    <h6 class="mt-0 mb-2 lh-base">
+                      Server <b>AWS EC2</b> has been down for <span class="text-danger">10</span> minutes. Immediate attention required.
                     </h6>
                   </a>
                   <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
-                    <span><i class="mdi mdi-clock-outline"></i> Just 30 sec ago</span>
+                    <span><i class="mdi mdi-clock-outline"></i> Just 10 sec ago</span>
                   </p>
-                </div>
-                <div class="px-2 fs-15">
-                  <form>
-                    <button class="btn btn-icon btn-danger">
-                      <i class="bs bx-message-square-detail"></i>
-                    </button>
-                  </form>
                 </div>
               </div>
             </div>
 
             <div class="text-reset notification-item d-block dropdown-item position-relative">
               <div class="d-flex">
-                <img src="assets/images/users/user8-128x128.jpg" class="me-3 rounded-circle avatar-xs flex-shrink-0" alt="user-pic">
+                <img src="assets/images/users/user8-128x128.jpg" class="me-3 rounded-circle avatar-xs flex-shrink-0" alt="">
                 <div class="flex-grow-1">
                   <a href="#" class="stretched-link">
-                    <h6 class="mt-0 mb-1 fs-13 fw-semibold">Angela Bernier</h6>
+                    <h6 class="mt-0 mb-1 fs-13 fw-semibold">John Doe</h6>
                   </a>
                   <div class="fs-13 text-muted">
-                    <p class="mb-1">Answered to your comment on the cash flow forecast's
-                      graph 🔔.</p>
+                    <p class="mb-1">John Doe commented on the task 'Update Client Proposal.</p>
                   </div>
                   <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
-                    <span><i class="mdi mdi-clock-outline"></i> 48 min ago</span>
+                    <span><i class="mdi mdi-clock-outline"></i> 10 min ago</span>
                   </p>
-                </div>
-                <div class="px-2 fs-15">
-                  <div class="form-check notification-check">
-                    <input class="form-check-input" type="checkbox" value="" id="all-notification-check02">
-                    <label class="form-check-label" for="all-notification-check02"></label>
-                  </div>
                 </div>
               </div>
             </div>
@@ -142,56 +132,47 @@
             <div class="text-reset notification-item d-block dropdown-item position-relative">
               <div class="d-flex">
                 <div class="avatar-xs me-3 flex-shrink-0">
-                  <span class="avatar-title bg-danger-subtle text-danger rounded-circle fs-16">
-                    <i class='bx bx-message-square-dots'></i>
+                  <span class="avatar-title bg-warning-subtle text-warning rounded-circle fs-16">
+                    <i class='bx bx-dollar'></i>
+                  </span>
+                </div>
+                <div class="flex-grow-1">
+                  <a href="#" class="stretched-link">
+                    <h6 class="mt-0 mb-2 fs-13 lh-base">Sales target of $10,000 for the month has been reached!</h6>
+                  </a>
+                  <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                    <span><i class="mdi mdi-clock-outline"></i> 2 hrs ago</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-reset notification-item d-block dropdown-item position-relative">
+              <div class="d-flex">
+                <div class="avatar-xs me-3 flex-shrink-0">
+                  <span class="avatar-title bg-success-subtle text-success rounded-circle fs-16">
+                    <i class='bx bxl-product-hunt'></i>
                   </span>
                 </div>
                 <div class="flex-grow-1">
                   <a href="#!" class="stretched-link">
-                    <h6 class="mt-0 mb-2 fs-13 lh-base">You have received <b class="text-success">20</b> new messages in the conversation
+                    <h6 class="mt-0 mb-2 fs-13 lh-base">
+                      Order <span class="text-info fw-semibold">#12345</span> placed. Awaiting fulfillment.
                     </h6>
                   </a>
                   <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
-                    <span><i class="mdi mdi-clock-outline"></i> 2 hrs ago</span>
+                    <span><i class="mdi mdi-clock-outline"></i> 4 hrs ago</span>
                   </p>
-                </div>
-                <div class="px-2 fs-15">
-                  <div class="form-check notification-check">
-                    <input class="form-check-input" type="checkbox" value="" id="all-notification">
-                    <label class="form-check-label" for="all-notification-check03"></label>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="text-reset notification-item d-block dropdown-item position-relative">
-              <div class="d-flex">
-                <div class="avatar-xs me-3 flex-shrink-0">
-                                                <span class="avatar-title bg-danger-subtle text-danger rounded-circle fs-16">
-                                                    <i class='bx bx-message-square-dots'></i>
-                                                </span>
-                </div>
-                <div class="flex-grow-1">
-                  <a href="#!" class="stretched-link">
-                    <h6 class="mt-0 mb-2 fs-13 lh-base">You have received <b class="text-success">20</b> new messages in the conversation
-                    </h6>
-                  </a>
-                  <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
-                    <span><i class="mdi mdi-clock-outline"></i> 2 hrs ago</span>
-                  </p>
-                </div>
-                <div class="px-2 fs-15">
-                  <div class="form-check notification-check">
-                    <input class="form-check-input" type="checkbox" value="" id="all-notification-check03">
-                    <label class="form-check-label" for="all-notification-check03"></label>
-                  </div>
                 </div>
               </div>
             </div>
 
           </div>
-          <div class="p-3 empty-header-item1 border-top text-center">
-            <a href="notifications.html" class="">View All Notifications</a>
+          <div class="p-3 text-center">
+            <a href="#" class="btn btn-sm btn-outline-success fs-13">
+              View All Notifications
+              <i class='bx bx-right-arrow-alt align-middle'></i>
+            </a>
           </div>
         </div>
       </div>
@@ -203,9 +184,9 @@
             aria-haspopup="true"
             aria-expanded="false">
           <span class="d-flex align-items-center">
-            <img class="rounded-circle header-user-profile-img" src="assets/images/users/user8-128x128.jpg" alt="">
+            <img class="rounded header-user-profile-img" src="assets/images/users/user8-128x128.jpg" alt="">
              <span class="text-start ms-xl-2">
-               <span class="d-none d-xl-inline-block ms-1 fw-semibold">Bishal Saha</span>
+               <span class="d-none d-xl-inline-block ms-1 fw-medium">Brian Harris</span>
                <span class="d-none d-xl-block ms-1 fs-12">Administrator</span>
              </span>
           </span>
