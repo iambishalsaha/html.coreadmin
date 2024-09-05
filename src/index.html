@@ -25,7 +25,21 @@
   @@include("partials/navbar.html")
 
   <main class="main-container">
-    main
+    <div class="page-container">
+      <div class="container-fluid">
+        @@include("partials/breadcrumb.html", {"pageTitle": "Dashboard", "title": "Dashboard"})
+
+        <div class="row">
+          <div class="col-xxl-6">
+            <div class="card">
+              <div class="card-body p-0">
+                <div style="height: 600px">Hello</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <!-- Includes the footer section, containing copyright information, links, and other footer elements. -->

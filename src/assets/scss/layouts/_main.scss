@@ -1,0 +1,23 @@
+.main-container {
+  transition: all .1s ease-out;
+  margin-left: 0;
+
+  @media (width >= 768px) {
+    margin-left: $vertical-navbar-width;
+  }
+}
+
+.page-container {
+  padding: calc(#{$header-height} + #{$grid-gutter-width}) calc(#{$grid-gutter-width} * 0.5) $footer-height calc(#{$grid-gutter-width} * 0.5);
+}
+
+.page-title-box {
+  padding: 1rem 0;
+  margin: -20px 0 0 ;
+
+  h4 {
+    font-weight: 700;
+    font-size: 15px!important;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,8 @@
+.card {
+  margin-bottom: $grid-gutter-width;
+  box-shadow: $card-box-shadow;
+}
+
+.card-header {
+  border-bottom: 1px solid var(--#{$prefix}border-color);
+}

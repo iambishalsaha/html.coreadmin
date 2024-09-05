@@ -326,7 +326,7 @@ $cyans: (
 
 // scss-docs-start theme-color-variables
 $primary:       $indigo !default;
-$secondary:     $gray-600 !default;
+$secondary:     $blue !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -416,7 +416,7 @@ $color-mode-type:             data !default; // `data` or `media-query`
 
 // Prefix for :root CSS variables
 
-$variable-prefix:             core-admin- !default; // modified // Deprecated in v5.2.0 for the shorter `$prefix`
+$variable-prefix:             core-admin-; // modified // Deprecated in v5.2.0 for the shorter `$prefix`
 $prefix:                      $variable-prefix !default;
 
 // Gradient
@@ -463,15 +463,15 @@ $position-values: (
 
 $body-text-align:           null !default;
 $body-color:                $gray-900 !default;
-$body-bg:                   $white !default;
+$body-bg:                   #f1f4f7; // modified
 
-$body-secondary-color:      rgba($body-color, .75) !default;
-$body-secondary-bg:         $gray-200 !default;
+$body-secondary-color:      $gray-600; // modified
+$body-secondary-bg:         $white; // modified
 
 $body-tertiary-color:       rgba($body-color, .5) !default;
 $body-tertiary-bg:          $gray-100 !default;
 
-$body-emphasis-color:       $black !default;
+$body-emphasis-color:       $gray-900; // modified
 
 // Links
 //
@@ -583,7 +583,7 @@ $border-radius-2xl:           $border-radius-xxl !default; // Deprecated in v5.3
 // fusv-enable
 
 // scss-docs-start box-shadow-variables
-$box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
+$box-shadow:                  0 .5rem 0.1rem rgba($black, .15) !default;
 $box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
 $box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
 $box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
@@ -1371,10 +1371,11 @@ $card-spacer-x:                     $spacer !default;
 $card-title-spacer-y:               $spacer * .5 !default;
 $card-title-color:                  null !default;
 $card-subtitle-color:               null !default;
-$card-border-width:                 var(--#{$prefix}border-width) !default;
+$card-border-width:                 0; // modified
 $card-border-color:                 var(--#{$prefix}border-color-translucent) !default;
 $card-border-radius:                var(--#{$prefix}border-radius) !default;
-$card-box-shadow:                   null !default;
+//$card-box-shadow:                   rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; // modified
+$card-box-shadow:                  rgba(0, 0, 0, 0.1) 0px 1px 2px 0px; // modified 0 3px 3px rgba(56, 65, 74, 0.1);
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y * .5 !default;
 $card-cap-padding-x:                $card-spacer-x !default;
@@ -1382,7 +1383,7 @@ $card-cap-bg:                       rgba(var(--#{$prefix}body-color-rgb), .03) !
 $card-cap-color:                    null !default;
 $card-height:                       null !default;
 $card-color:                        null !default;
-$card-bg:                           var(--#{$prefix}body-bg) !default;
+$card-bg:                           var(--#{$prefix}secondary-bg); // modified
 $card-img-overlay-padding:          $spacer !default;
 $card-group-margin:                 $grid-gutter-width * .5 !default;
 // scss-docs-end card-variables

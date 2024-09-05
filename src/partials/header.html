@@ -43,6 +43,31 @@
           </div>
         </div>
       </div>
+
+      <div class="ms-1 d-none d-sm-flex header-item">
+        <button type="button" class="btn btn-icon btn-header rounded-circle " id="header-color-mode">
+          <i class="bx bx-sun fs-22 d-none" id="header-color-mode-light-icon"></i>
+          <i class="bx bx-moon fs-22" id="header-color-mode-dark-icon"></i>
+        </button>
+      </div>
+      <div class="ms-1 d-none d-sm-flex header-item">
+        <button type="button" class="btn btn-icon btn-header rounded-circle " id="header-fullscreen-btn">
+          <i class="bx bx-expand fs-22" id="header-fullscreen-icon"></i>
+        </button>
+      </div>
+      <div class="ms-1 d-none d-sm-flex">
+        <div class="ms-1 d-none d-sm-flex header-item rounded-circle shadow-none">
+          <button
+              type="button"
+              class="btn btn-icon btn-header rounded-circle customizer fs-22"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#customizer-offcanvas"
+              aria-controls="customizer-offcanvas"
+          >
+            <i class='mdi mdi-spin mdi-cog-outline fs-20'></i>
+          </button>
+        </div>
+      </div>
       <div class="ms-1 header-item dropdown header-dropdown">
         <button type="button" class="btn btn-icon btn-header rounded-circle" data-bs-toggle="dropdown" data-bs-auto-close="outside"
                 aria-haspopup="true" aria-expanded="false">
@@ -170,30 +195,6 @@
           </div>
         </div>
       </div>
-      <div class="ms-1 d-none d-sm-flex header-item">
-        <button type="button" class="btn btn-icon btn-header rounded-circle " id="header-color-mode">
-          <i class="bx bx-sun fs-22 d-none" id="header-color-mode-light-icon"></i>
-          <i class="bx bx-moon fs-22" id="header-color-mode-dark-icon"></i>
-        </button>
-      </div>
-      <div class="ms-1 d-none d-sm-flex header-item">
-        <button type="button" class="btn btn-icon btn-header rounded-circle " id="header-fullscreen-btn">
-          <i class="bx bx-expand fs-22" id="header-fullscreen-icon"></i>
-        </button>
-      </div>
-      <div class="ms-1 d-none d-sm-flex">
-        <div class="ms-1 d-none d-sm-flex header-item rounded-circle shadow-none">
-          <button
-              type="button"
-              class="btn btn-icon btn-header rounded-circle customizer fs-22"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#customizer-offcanvas"
-              aria-controls="customizer-offcanvas"
-          >
-            <i class='mdi mdi-spin mdi-cog-outline fs-20'></i>
-          </button>
-        </div>
-      </div>
       <div class="ms-sm-3 header-item dropdown header-user">
         <button
             type="button"
@@ -204,7 +205,7 @@
           <span class="d-flex align-items-center">
             <img class="rounded-circle header-user-profile-img" src="assets/images/users/user8-128x128.jpg" alt="">
              <span class="text-start ms-xl-2">
-               <span class="d-none d-xl-inline-block ms-1 fw-medium">Brian Harris</span>
+               <span class="d-none d-xl-inline-block ms-1 fw-semibold">Bishal Saha</span>
                <span class="d-none d-xl-block ms-1 fs-12">Administrator</span>
              </span>
           </span>
