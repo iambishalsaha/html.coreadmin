@@ -9,32 +9,39 @@
 
   /** Footer */
   --#{$prefix}footer-bg-color:                                          #{$footer-bg-color};
-  --#{$prefix}footer-text-color:                                       #{$footer-text-color};
+  --#{$prefix}footer-text-color:                                        #{$footer-text-color};
 
   /* Navbar */
-  --#{$prefix}vertical-navbar-box-shadow:                                   #{$vertical-navbar-box-shadow};
-  --#{$prefix}vertical-navbar-border-color:                                   #{$vertical-navbar-border-color};
-
-  --#{$prefix}navbar-bg-color:                                   #{$navbar-bg-color};
-  --#{$prefix}navbar-text-color:                               #{$navbar-text-color};
+  --#{$prefix}navbar-bg-color:                                          #{$navbar-bg-color};
+  --#{$prefix}vertical-navbar-border-color:                             #{$vertical-navbar-border-color};
+  --#{$prefix}navbar-menu-color:                                        #{$navbar-menu-color};
+  --#{$prefix}vertical-navbar-box-shadow:                               #{$vertical-navbar-box-shadow};
+  --#{$prefix}navbar-menu-active-color:                                      #{$navbar-menu-active-color};
+  --#{$prefix}navbar-menu-hover-color:                                       #{$navbar-menu-hover-color};
 
   &[data-navbar-color-mode="dark"] {
-    --#{$prefix}navbar-bg-color:                                   #{$dark-navbar-bg-color};
-    --#{$prefix}vertical-navbar-border-color:                                   #{$dark-vertical-navbar-border-color};
-    --#{$prefix}navbar-text-color:                               #{$dark-navbar-text-color};
+    --#{$prefix}navbar-bg-color:                                        #{$dark-navbar-bg-color};
+    --#{$prefix}vertical-navbar-border-color:                           #{$dark-vertical-navbar-border-color};
+    --#{$prefix}navbar-menu-color:                                      #{$dark-navbar-menu-color};
+    --#{$prefix}navbar-menu-active-color:                                    #{$dark-navbar-menu-active-color};
+    --#{$prefix}navbar-menu-hover-color:                                     #{$dark-navbar-menu-hover-color};
   }
 }
 
 @if $enable-dark-mode {
   @include color-mode(dark, true) {
-    --#{$prefix}navbar-bg-color: #{$navbar-bg-color-dark};
-    --#{$prefix}vertical-navbar-border-color:                                   #{$vertical-navbar-border-color};
-    --#{$prefix}navbar-text-color:                               #{$navbar-text-color-dark};
+    --#{$prefix}navbar-bg-color:                                        #{$navbar-bg-color-dark};
+    --#{$prefix}vertical-navbar-border-color:                           #{$vertical-navbar-border-color-dark};
+    --#{$prefix}navbar-menu-color:                                      #{$navbar-menu-color-dark};
+    --#{$prefix}navbar-menu-active-color:                               #{$navbar-menu-active-color-dark};
+    --#{$prefix}navbar-menu-hover-color:                                #{$navbar-menu-hover-color-dark};
 
     &[data-navbar-color-mode="dark"] {
-      --#{$prefix}navbar-bg-color:                                   #{$dark-navbar-bg-color-dark};
-      --#{$prefix}vertical-navbar-border-color:                                   #{$dark-vertical-navbar-border-color-dark};
-      --#{$prefix}navbar-text-color:                               #{$dark-navbar-text-color-dark};
+      --#{$prefix}navbar-bg-color:                                      #{$dark-navbar-bg-color-dark};
+      --#{$prefix}vertical-navbar-border-color:                         #{$dark-vertical-navbar-border-color-dark};
+      --#{$prefix}navbar-menu-color:                                    #{$dark-navbar-menu-color-dark};
+      --#{$prefix}navbar-menu-active-color:                             #{$dark-navbar-menu-active-color-dark};
+      --#{$prefix}navbar-menu-hover-color:                              #{$dark-navbar-menu-hover-color-dark};
     }
   }
 }

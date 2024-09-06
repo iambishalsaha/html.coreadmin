@@ -2,11 +2,15 @@
 Navbar
 *****************************************************************************************************/
 // light
-$vertical-navbar-border-color:                      $white;
-$navbar-bg-color-dark: $white;
-$navbar-text-color-dark:                            darken($gray-600, 10%);
+$navbar-bg-color-dark:                                                $white;
+$vertical-navbar-border-color-dark:                                   $white;
+$navbar-menu-color-dark:                                              darken($gray-600, 10%);
+$navbar-menu-active-color-dark:                                       $primary;
+$navbar-menu-hover-color-dark:                                        $primary;
 
 // Dark
-$dark-vertical-navbar-border-color-dark:                      #212124;
-$dark-navbar-bg-color-dark: #212124;
-$dark-navbar-text-color-dark:                            #7c7f90;
+$dark-navbar-bg-color-dark:                                           #212124;
+$dark-vertical-navbar-border-color-dark:                              #212124;
+$dark-navbar-menu-color-dark:                                         #7c7f90;
+$dark-navbar-menu-active-color-dark:                                  $white;
+$dark-navbar-menu-hover-color-dark:                                   $white;

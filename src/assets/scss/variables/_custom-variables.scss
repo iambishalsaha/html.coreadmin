@@ -19,30 +19,39 @@ $header-border-color:                            $border-color;
 /****************************************************************************************************
 Navbar
 *****************************************************************************************************/
-$vertical-navbar-width: 270px;
-$vertical-navbar-box-shadow:                        0 2px 5px rgba(21, 34, 68, 0.10);
-$vertical-navbar-menu-padding-x:                    1.2rem;
-$vertical-navbar-menu-padding-y:                    0.6rem;
-$vertical-navbar-border-color:                      $white;
+$vertical-navbar-width:                                             270px;
+$vertical-navbar-box-shadow:                                        0 2px 5px rgba(21, 34, 68, 0.10);
+$vertical-navbar-menu-padding-x:                                    1.5rem;
+$vertical-navbar-menu-padding-y:                                    0.6rem;
+$vertical-navbar-sub-menu-padding-x:                                1.5rem;
+$vertical-navbar-sub-menu-padding-y:                                0.5rem;
 
-$navbar-text-color:                            darken($gray-600, 10%);
-$navbar-menu-font-size:                    0.938rem;
-$navbar-sub-menu-font-size:                0.875rem;
-$navbar-menu-font-family:                  $font-family-secondary;
-$navbar-sub-menu-font-family:              $font-family-primary;
-$navbar-menu-icon-width:                   2rem;
+$navbar-menu-font-size:                                             0.938rem;
+$navbar-sub-menu-font-size:                                         0.875rem;
+$navbar-menu-font-family:                                           $font-family-secondary;
+$navbar-sub-menu-font-family:                                       $font-family-primary;
+$navbar-menu-icon-width:                                            2rem;
 
 // light
-$navbar-bg-color: $white;
+$navbar-bg-color:                                                   $white;
+$vertical-navbar-border-color:                                      $white;
+$navbar-menu-color:                                                 darken($gray-600, 10%);
+$navbar-menu-active-color:                                          $primary;
+$navbar-menu-hover-color:                                           $primary;
+$navbar-sub-menu-color:                                             darken($gray-600, 10%);
+$navbar-sub-menu-active-color:                                      $primary;
+$navbar-sub-menu-hover-color:                                       $primary;
 
 // Dark
-$dark-vertical-navbar-border-color:                      #006bb2;
-$dark-navbar-bg-color: #006bb2;
-$dark-navbar-text-color: #bcc9d5;
+$dark-navbar-bg-color:                                              #006bb2;
+$dark-vertical-navbar-border-color:                                 #006bb2;
+$dark-navbar-menu-color:                                            #bcc9d5;
+$dark-navbar-menu-active-color:                                     $white;
+$dark-navbar-menu-hover-color:                                      $white;
 
 /****************************************************************************************************
 Footer
 *****************************************************************************************************/
-$footer-height: 65px;
-$footer-bg-color: $white;
-$footer-text-color: $gray-700;
+$footer-height:                                                     65px;
+$footer-bg-color:                                                   $white;
+$footer-text-color:                                                 $gray-700;

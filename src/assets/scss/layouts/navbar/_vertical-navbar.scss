@@ -27,13 +27,13 @@
       padding: $vertical-navbar-menu-padding-y $vertical-navbar-menu-padding-x;
       font-size: $navbar-menu-font-size;
       font-family: $navbar-menu-font-family;
-      color: var(--#{$prefix}navbar-text-color);
+      color: var(--#{$prefix}navbar-menu-color);
 
       &.active {
-        color: $white;
+        color: var(--#{$prefix}navbar-menu-active-color);
       }
       &:hover {
-        color: $white;
+        color: var(--#{$prefix}navbar-menu-hover-color);
       }
 
       i {
@@ -43,7 +43,7 @@
         line-height: inherit;
       }
       svg {
-        width: 18px;
+        width: 1.25rem;
         margin-right: 0.665rem;
       }
       .badge {
@@ -66,16 +66,16 @@
         }
 
         &[aria-expanded=true] {
-          filter: hue-rotate(90deg) brightness(100%);
+          color: var(--#{$prefix}navbar-menu-active-color);
 
           &:after {
+            color: var(--#{$prefix}navbar-menu-active-color);
             transform: rotate(90deg);
-            filter: hue-rotate(90deg) brightness(100%);
           }
 
           &:before {
             opacity: 1;
-            filter: hue-rotate(90deg) brightness(100%);
+            background-color: var(--#{$prefix}navbar-menu-active-color);
           }
         }
       }
@@ -93,11 +93,10 @@
       padding-left: $navbar-menu-icon-width;
 
       .nav-link {
-        padding: $vertical-navbar-menu-padding-y $vertical-navbar-menu-padding-x;
+        padding: $vertical-navbar-sub-menu-padding-y $vertical-navbar-sub-menu-padding-x;
         font-size: $navbar-sub-menu-font-size;
-        font-family: $navbar-menu-font-family;
-        color: var(--navbar-text-color);
-        filter: brightness(60%);
+        font-family: $navbar-sub-menu-font-family;
+        color: var(--#{$prefix}navbar-menu-color);
         white-space: none;
         position: relative;
 
@@ -105,7 +104,7 @@
           content: '';
           width: 6px;
           height: 1.5px;
-          background-color: var(--navbar-text-color);
+          background-color: var(--#{$prefix}navbar-menu-color);
           position: absolute;
           left: 2px;
           top: 19.5px;
@@ -114,22 +113,19 @@
         }
 
         &:hover {
-          filter: hue-rotate(90deg) brightness(100%);
+          color: var(--#{$prefix}navbar-menu-hover-color);
 
           &:before {
-            background-color: var(--navbar-text-color) !important;
-            filter: hue-rotate(90deg) brightness(100%);
+            background-color: var(--#{$prefix}navbar-menu-hover-color);
             opacity: 1;
           }
         }
 
         &.active {
-          color: var(--navbar-text-color);
-          filter: hue-rotate(90deg) brightness(100%);
+          color: var(--#{$prefix}navbar-menu-active-color);
 
           &:before {
-            background-color: var(--navbar-text-color);
-            filter: hue-rotate(90deg) brightness(100%);
+            background-color: var(--#{$prefix}navbar-menu-active-color);
           }
         }
       }
@@ -153,8 +149,6 @@
     }
   }
 }
-
-
 
 .logo {
   line-height: $header-height;
@@ -207,7 +201,7 @@
   cursor: default;
   font-size: 11px;
   text-transform: uppercase;
-  color: var(--navbar-text-color);;
+  color: var(--#{$prefix}navbar-menu-color);
   font-weight: $font-weight-semibold;
 
   span {
